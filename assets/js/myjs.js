@@ -15,7 +15,7 @@ function createElementFromHTML(htmlString) {
 function getLastKey(JSONlist) {
     var max_key = -1;
     Object.keys(JSONlist).map(function(key) {
-        if(key > max_key){
+        if(parseInt(key) > parseInt(max_key)){
             max_key = key;
         }
     });
